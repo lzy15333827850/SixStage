@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://dubbo.apache.org/schema/dubbo
+        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!--声明服务名称,服务器名称,唯一的,必须的,推荐使用项目名-->
+    <dubbo:application name="DubboOrderService"></dubbo:application>
+
+    <!--声明使用的RPC和端口,使用默认值可省略-->
+    <dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
+
+    <!--暴露服务:dubbo的功能
+        service:暴露要是用的服务,让调用方能调用接口
+        interface:接口全限定名
+        red:接口实现类对象的bean id
+        registry:使用注册中心,
+        注意:有几个接口需要报漏就需要几个<dubbo:service>
+     -->
+    <dubbo:service interface="com.baidu.service.OrderService" ref="orderService" registry="N/A"></dubbo:service>
+    <!--接口实现类-->
+    <bean id="orderService" class="com.baidu.service.impl.OrderServiceImpl"></bean>
+</beans>
