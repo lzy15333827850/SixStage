@@ -18,5 +18,6 @@ public class ConsumerMain {
         System.out.println(order);
         System.out.println(orderService.getClass().getName());
         System.out.println(UUID.randomUUID().toString().substring(0, 8));
+
     }
 }
