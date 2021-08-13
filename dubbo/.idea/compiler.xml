@@ -8,11 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="01-dubboService" />
         <module name="02-dubboUserService" />
+        <module name="_03common" />
+        <module name="_04dubboUserService" />
+        <module name="_05dubboOrderService" />
+        <module name="_06customerService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01-dubboService" target="1.5" />
       <module name="02-dubboUserService" target="1.5" />
+      <module name="_03common" target="1.5" />
+      <module name="_04dubboUserService" target="1.5" />
+      <module name="_05dubboOrderService" target="1.5" />
+      <module name="_06customerService" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

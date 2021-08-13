@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://dubbo.apache.org/schema/dubbo
+        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!--声明服务名称-->
+    <dubbo:application name="dubbo-OrderService"/>
+
+    <!--协议和端口-->
+    <dubbo:protocol name="dubbo" port="20882"/>
+
+    <dubbo:service interface="com.baidu.service.MyOrderService" registry="N/A" ref="orderServiceImpl"></dubbo:service>
+
+       <bean id="orderServiceImpl" class="com.baidu.service.impl.OrderServiceImpl"></bean>
+</beans>

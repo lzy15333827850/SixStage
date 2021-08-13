@@ -5,6 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/01-dubboService/pom.xml" />
         <option value="$PROJECT_DIR$/02-dubboUserService/pom.xml" />
+        <option value="$PROJECT_DIR$/_03common/pom.xml" />
+        <option value="$PROJECT_DIR$/_04dubboUserService/pom.xml" />
+        <option value="$PROJECT_DIR$/_05dubboOrderService/pom.xml" />
+        <option value="$PROJECT_DIR$/_06customerService/pom.xml" />
       </list>
     </option>
   </component>

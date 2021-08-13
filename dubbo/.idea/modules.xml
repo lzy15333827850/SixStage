@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01-dubboService/01-dubboService.iml" filepath="$PROJECT_DIR$/01-dubboService/01-dubboService.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-dubboUserService/02-dubboUserService.iml" filepath="$PROJECT_DIR$/02-dubboUserService/02-dubboUserService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_03common/_03common.iml" filepath="$PROJECT_DIR$/_03common/_03common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_04dubboUserService/_04dubboUserService.iml" filepath="$PROJECT_DIR$/_04dubboUserService/_04dubboUserService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_05dubboOrderService/_05dubboOrderService.iml" filepath="$PROJECT_DIR$/_05dubboOrderService/_05dubboOrderService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_06customerService/_06customerService.iml" filepath="$PROJECT_DIR$/_06customerService/_06customerService.iml" />
     </modules>
   </component>
 </project>
